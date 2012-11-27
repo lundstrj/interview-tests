@@ -74,7 +74,7 @@ class QDtree(object):
 if __name__ == "__main__":
   arg = sys.argv
   if "-h" in arg or "-help" in arg:
-    print "Welcome to the listFolderContent app!\nUsage: \n -v (verbose)\n",
+    print "Welcome to the listFolderContent app!\nUsage: \n -v (verbose)\n"\
           " -d (debug)\n -i (interactive)\n -f folder"
   else:
     directory = None  
@@ -83,4 +83,4 @@ if __name__ == "__main__":
     t.debug = "-d" in arg
     t.verbose = "-v" in arg
     t.intact = "-i" in arg
-    else: t.main(directory)
+    t.main(directory)
